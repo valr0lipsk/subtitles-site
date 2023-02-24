@@ -582,12 +582,29 @@ h2 {
       right: 37%;
     }
   }
+
+  .reviews {
+    .swiper-button-prev {
+      left: -67px;
+    }
+    .swiper-button-next {
+      right: -65px;
+    }
+  }
 }
 
 @media (max-width: 1050px) {
   .main {
     .photos {
       right: -25%;
+    }
+  }
+
+  .reviews__swiper {
+    max-width: 800px;
+
+    .swiper__item {
+      padding: 40px 40px 48px;
     }
   }
 }
@@ -642,6 +659,25 @@ h2 {
   }
 }
 
+@media (max-width: 950px) {
+  .reviews__swiper {
+    max-width: 750px;
+
+    .swiper__item {
+      max-width: 350px;
+    }
+  }
+
+  .reviews {
+    .swiper-button-prev {
+      left: -42px;
+    }
+    .swiper-button-next {
+      right: -42px;
+    }
+  }
+}
+
 @media (max-width: 850px) {
   h2 {
     font-size: 44px;
@@ -692,6 +728,14 @@ h2 {
       }
     }
   }
+
+  .reviews__swiper {
+    max-width: 500px;
+
+    .swiper__item {
+      max-width: 350px;
+    }
+  }
 }
 
 @media (max-width: 790px) {
@@ -734,6 +778,10 @@ h2 {
       padding-bottom: 90px;
       padding-top: 50px;
     }
+
+    &--reviews {
+      padding-top: 55px;
+    }
   }
 
   .instruction__image {
@@ -769,6 +817,17 @@ h2 {
   }
 }
 
+@media (max-width: 600px) {
+  .reviews .reviews__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .reviews__swiper {
+    max-width: 450px;
+  }
+}
+
 @media (max-width: 550px) {
   h1 {
     font-size: 60px;
@@ -792,6 +851,19 @@ h2 {
         font-size: 20px;
         line-height: 32px;
       }
+    }
+  }
+
+  .reviews__swiper {
+    max-width: 350px;
+  }
+
+  .reviews {
+    .swiper-button-prev {
+      left: -30px;
+    }
+    .swiper-button-next {
+      right: -30px;
     }
   }
 }
@@ -836,6 +908,26 @@ h2 {
   }
 }
 
+@media (max-width: 415px) {
+  .reviews__swiper {
+    max-width: 300px;
+    align-items: center;
+
+    .swiper__item {
+      max-width: 300px;
+    }
+  }
+
+  .reviews {
+    .swiper-button-prev {
+      left: -30px;
+    }
+    .swiper-button-next {
+      right: -30px;
+    }
+  }
+}
+
 @media (max-width: 350px) {
   h1 {
     font-size: 54px;
@@ -852,6 +944,26 @@ h2 {
           padding: 0 19px;
         }
       }
+    }
+  }
+
+  .reviews__swiper {
+    .swiper__item {
+      padding: 35px 27px 35px;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 110%;
+  }
+
+  .reviews {
+    .swiper-button-prev {
+      left: 25%;
+    }
+    .swiper-button-next {
+      right: 25%;
     }
   }
 }
