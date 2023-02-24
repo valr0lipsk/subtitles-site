@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;1,500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Auto CC</title>
   </head>
@@ -159,78 +163,87 @@
         <div class="container container--reviews">
           <h2 class="reviews__title">Reviews from satisfied users</h2>
 
-          <div class="reviews__swiper">
-            <div class="swiper__item">
-              <div class="review__rate">
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-              </div>
-              <p class="review__title">Works as advertised!</p>
-              <p class="item__caption">
-                This app does exactly what it says it will do! Great app if you
-                want your video captioned without having to do it yourself!
-              </p>
+          <div class="wrapper-swiper">
+            <div class="swiper">
+              <div class="reviews__swiper swiper-wrapper">
+                <div class="swiper__item swiper-slide">
+                  <div class="review__rate">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                  </div>
+                  <p class="review__title">Works as advertised!</p>
+                  <p class="item__caption">
+                    This app does exactly what it says it will do! Great app if
+                    you want your video captioned without having to do it
+                    yourself!
+                  </p>
 
-              <div class="review__user">
-                <img src="./img/avatar.svg" />
-                <div class="user__info">
-                  <p class="user__name">David Olivas</p>
-                  <p class="date">1/22/2021</p>
+                  <div class="review__user">
+                    <img src="./img/avatar.svg" />
+                    <div class="user__info">
+                      <p class="user__name">David Olivas</p>
+                      <p class="date">1/22/2021</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper__item swiper-slide">
+                  <div class="review__rate">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                  </div>
+                  <p class="review__title">Amazing!</p>
+                  <p class="item__caption">
+                    Amazing, great layout for captions, better accuracy than
+                    TikTok, and it’s free with no ads or watermarks? What’s the
+                    catch? Thank you.
+                  </p>
+
+                  <div class="review__user">
+                    <img src="./img/avatar5.svg" />
+                    <div class="user__info">
+                      <p class="user__name">Arial Herrcik</p>
+                      <p class="date">4/19/2021</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper__item swiper-slide">
+                  <div class="review__rate">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                  </div>
+                  <p class="review__title">Amazing!</p>
+                  <p class="item__caption">
+                    Amazing, great layout for captions, better accuracy than
+                    TikTok, and it’s free with no ads or watermarks? What’s the
+                    catch? Thank you.
+                  </p>
+
+                  <div class="review__user">
+                    <img src="./img/avatar5.svg" />
+                    <div class="user__info">
+                      <p class="user__name">Arial Herrcik</p>
+                      <p class="date">4/19/2021</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="swiper__item">
-              <div class="review__rate">
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-              </div>
-              <p class="review__title">Amazing!</p>
-              <p class="item__caption">
-                Amazing, great layout for captions, better accuracy than TikTok,
-                and it’s free with no ads or watermarks? What’s the catch? Thank
-                you.
-              </p>
-
-              <div class="review__user">
-                <img src="./img/avatar5.svg" />
-                <div class="user__info">
-                  <p class="user__name">Arial Herrcik</p>
-                  <p class="date">4/19/2021</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper__item">
-              <div class="review__rate">
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-              </div>
-              <p class="review__title">Amazing!</p>
-              <p class="item__caption">
-                Amazing, great layout for captions, better accuracy than TikTok,
-                and it’s free with no ads or watermarks? What’s the catch? Thank
-                you.
-              </p>
-
-              <div class="review__user">
-                <img src="./img/avatar5.svg" />
-                <div class="user__info">
-                  <p class="user__name">Arial Herrcik</p>
-                  <p class="date">4/19/2021</p>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
 </html>
