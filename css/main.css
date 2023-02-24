@@ -199,7 +199,7 @@ h2 {
 }
 
 .main {
-  background: url("../img/background.png") border-box;
+  background: url("../img/background.png");
   background-size: cover;
   width: 100%;
   padding-bottom: 168px;
@@ -606,11 +606,6 @@ h2 {
   left: 45%;
 }
 
-@media (max-width: 1400px) {
-  .main {
-    background-size: auto;
-  }
-}
 @media (max-width: 1150px) {
   .container {
     padding-left: 25px;
@@ -636,10 +631,27 @@ h2 {
     left: 0;
     bottom: 15%;
   }
+  .container--instruction {
+    padding-top: 64px;
+    padding-bottom: 71px;
+  }
+  .instruction__image img:first-of-type {
+    width: 200px;
+    top: 213px;
+    left: -71px;
+  }
+  .instruction__image img:last-of-type {
+    width: 300px;
+  }
 }
 @media (max-width: 850px) {
+  h2 {
+    font-size: 44px;
+    line-height: 60px;
+  }
   .main {
     margin-bottom: 30px;
+    padding-bottom: 60px;
   }
   .main__subtitle {
     margin-bottom: 30px;
@@ -665,6 +677,18 @@ h2 {
         -ms-flex-positive: 0;
             flex-grow: 0;
   }
+  .instruction__image {
+    right: 40%;
+  }
+  .instruction__steps {
+    max-width: 55%;
+  }
+  .instruction .steps__item:not(:first-of-type) {
+    margin-bottom: 16px;
+  }
+  .instruction .steps__item--first {
+    margin-bottom: 32px;
+  }
 }
 @media (max-width: 764px) {
   h1 {
@@ -679,6 +703,40 @@ h2 {
   .main .photos {
     left: 0;
     bottom: 8%;
+  }
+}
+@media (max-width: 750px) {
+  h2 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .container--instruction {
+    padding-bottom: 90px;
+    padding-top: 50px;
+  }
+  .instruction__image {
+    right: 30%;
+  }
+  .instruction__steps {
+    max-width: 62%;
+  }
+  .instruction .steps__item span.number {
+    margin-right: 30px;
+  }
+  .item__title {
+    text-align: left;
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .instruction__title {
+    max-width: 62%;
+  }
+  .instruction__title span {
+    position: relative;
+  }
+  .instruction__title img {
+    right: 0%;
+    width: 100%;
   }
 }
 @media (max-width: 550px) {
@@ -704,6 +762,13 @@ h2 {
 @media (max-width: 500px) {
   .header__menu .menu__item:not(:first-of-type) {
     margin-left: 30px;
+  }
+  .instruction__image {
+    display: none;
+  }
+  .instruction__title,
+.instruction__steps {
+    max-width: 100%;
   }
 }
 @media (max-width: 400px) {
