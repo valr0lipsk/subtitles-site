@@ -305,6 +305,8 @@ h2 {
 }
 .main .photos > img {
   margin-right: 20px;
+  width: 184px;
+  height: 112px;
 }
 .main .photos > img:not(.main .photos > img:first-of-type) {
   opacity: 0.2;
